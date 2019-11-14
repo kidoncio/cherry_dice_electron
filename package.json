@@ -1,0 +1,25 @@
+{
+  "name": "cherry_dice_electron",
+  "version": "1.0.0",
+  "description": "Electron App for Cherry Dice",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Kidoncio/cherry_dice_electron",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^7.1.1"
+  },
+  "dependencies": {
+    "v8-compile-cache": "^2.1.0"
+  }
+}
