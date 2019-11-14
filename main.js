@@ -19,8 +19,6 @@ function createWindow () {
     }
   })
 
-  mainWindow.maximize()
-
   // and load the index.html of the app.
   mainWindow.loadURL('https://cherrydice.herokuapp.com')
 
@@ -28,6 +26,7 @@ function createWindow () {
   // mainWindow.webContents.openDevTools()
 
   mainWindow.on('ready-to-show', function () {
+    mainWindow.maximize()
     mainWindow.show()
   })
 
