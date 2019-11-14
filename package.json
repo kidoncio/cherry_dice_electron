@@ -1,5 +1,5 @@
 {
-  "name": "cherry_dice",
+  "name": "cherry-dice",
   "version": "1.0.0",
   "description": "Electron App for Cherry Dice",
   "main": "main.js",
@@ -31,7 +31,8 @@
       "icon": "icon.png"
     },
     "snap": {
-      "category": "Utility"
+      "category": "Utility",
+      "description": "Cherry Dice - dice roller helps you and your rpg group roll easily any dice you want. You can even copy the text for proof at rpg calls. Play D&D, Shadowrun, Tormenta, Morpho and other RPG platforms with Cherry Dice by your side for easy rolls."
     }
   },
   "license": "CC0-1.0",
