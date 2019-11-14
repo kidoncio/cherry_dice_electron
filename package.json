@@ -5,10 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build:package": "electron-packager . --out=out",
-    "pack": "electron-builder --dir",
+    "pack": "electron-packager . --all",
     "dist": "electron-builder",
-    "build:deb": "electron-builder --linux deb tar.xz",
     "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/Kidoncio/cherry_dice_electron",
@@ -38,9 +36,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^7.1.1",
+    "electron-builder": "^22.1.0",
     "electron-installer-snap": "^4.0.0",
-    "electron-packager": "^14.1.0",
-    "electron-builder": "^22.1.0"
+    "electron-packager": "^14.1.0"
   },
   "dependencies": {
     "v8-compile-cache": "^2.1.0"
