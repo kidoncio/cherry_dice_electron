@@ -1,10 +1,4 @@
-# electron-quick-start
-
-**Clone and run for a quick way to see Electron in action.**
-
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
-
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+# Cherry Dice - Electron
 
 A basic Electron application needs just these files:
 
@@ -16,13 +10,11 @@ You can learn more about each of these components within the [Quick Start Guide]
 
 ## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/Kidoncio/cherry_dice_electron
 # Go into the repository
-cd electron-quick-start
+cd cherry_dice_electron
 # Install dependencies
 npm install
 # Run the app
@@ -40,6 +32,15 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 - [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
-## License
+### Deploy on Snap
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+```bash
+npm run dist
+
+npm run pack
+
+# If you do not have an Ubuntu One account, you can create one at https://snapcraft.io/account
+snapcraft login
+# Send snap
+snapcraft push cherry-dice_0.0.0_amd64.snap --release=stable
+```
