@@ -1,23 +1,45 @@
 {
-  "name": "cherry_dice_electron",
+  "name": "cherry_dice",
   "version": "1.0.0",
   "description": "Electron App for Cherry Dice",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:package": "electron-packager . --out=out",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build:deb": "electron-builder --linux deb tar.xz",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/Kidoncio/cherry_dice_electron",
+  "homepage": "https://github.com/Kidoncio/cherry_dice_electron",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Cherry Dice",
+    "Dice Roller",
+    "RPG",
+    "tabletop"
   ],
-  "author": "GitHub",
+  "author": {
+    "name": "Kidoncio",
+    "email": "lucas.kidoncio@gmail.com"
+  },
+  "build": {
+    "appId": "br.com.kidoncio.cherry_dice",
+    "productName": "Cherry Dice",
+    "copyright": "Copyright © year Kidoncio",
+    "linux": {
+      "icon": "icon.png"
+    },
+    "snap": {
+      "category": "Utility"
+    }
+  },
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^7.1.1"
+    "electron": "^7.1.1",
+    "electron-installer-snap": "^4.0.0",
+    "electron-packager": "^14.1.0",
+    "electron-builder": "^22.1.0"
   },
   "dependencies": {
     "v8-compile-cache": "^2.1.0"
