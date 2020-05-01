@@ -1,6 +1,11 @@
 # Cherry Dice - Electron
 
-A basic Electron application needs just these files:
+[![cherry-dice](https://snapcraft.io//cherry-dice/badge.svg)](https://snapcraft.io/cherry-dice)
+[![cherry-dice](https://snapcraft.io//cherry-dice/trending.svg?name=0)](https://snapcraft.io/cherry-dice)
+
+Cherry Dice - dice roller helps you and your rpg group roll easily any dice you want. You can even copy the text for proof at rpg calls. Play D&D, Shadowrun, Tormenta, Morpho and other RPG platforms with Cherry Dice by your side for easy rolls.
+
+This basic Electron application needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
 - `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
@@ -44,3 +49,9 @@ snapcraft login
 # Send snap
 snapcraft push cherry-dice_0.0.0_amd64.snap --release=stable
 ```
+
+### Available on
+
+- [Play Store](https://play.google.com/store/apps/details?id=br.com.kidoncio.cherrydice)
+- [Snapcraft](https://snapcraft.io/cherry-dice)
+- [Web as PWA](https://cherrydice.herokuapp.com/)
